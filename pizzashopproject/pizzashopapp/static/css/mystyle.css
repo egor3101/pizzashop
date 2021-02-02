@@ -8,6 +8,14 @@ body {
   background-color: #7B2324;
 }
 
+.bg-red {
+  background-color: #E21E25;
+}
+
+.text-white {
+  color: white;
+}
+
 .btn-red {
   color: white;
   background-color: #E21E35;
@@ -99,4 +107,18 @@ body {
 /* SIDE BAR - CONTENT */
 .content {
   padding: 0 40px;
+}
+
+.content .card {
+  border: none;
+}
+
+.table > thead > tr > th,
+.table > thead > tr > td {
+  vertical-align: middle;
+}
+
+.table,
+.table > thead > tr > th {
+  border-color: #E31E25;
 }

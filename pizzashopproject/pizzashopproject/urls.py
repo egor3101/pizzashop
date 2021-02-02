@@ -1,5 +1,4 @@
 """pizzashopproject URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
 Examples:
@@ -34,8 +33,9 @@ urlpatterns = [
 
     path('pizzashop/sign-up', views.pizzashop_sign_up, name='pizzashop-sign-up'),
 
-    path('pizzashop/account', views.pizzashop_account, name = 'pizzashop-account'),
+    path('pizzashop/account/', views.pizzashop_account, name='pizzashop-account'),
+    path('pizzashop/pizza/', views.pizzashop_pizza, name='pizzashop-pizza'),
+    path('pizzashop/pizza/add', views.pizzashop_add_pizza, name='pizzashop-add-pizza'),
+    path('pizzashop/pizza/edit/<int:pizza_id>', views.pizzashop_edit_pizza, name='pizzashop-edit-pizza'),
 
-    path('pizzashop/pizza', views.pizzashop_pizza, name='pizzashop-pizza'),
-
-              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
